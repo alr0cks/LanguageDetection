@@ -18,5 +18,9 @@ def lang_detect(text):
     
     return pred[0]
 
-text = input()
-print(lang_detect(text))
+while True:
+        
+    text = input("Enter the text: ")
+    if text == '0':
+        break
+    print("Detected Language: " + lang_detect(text))
